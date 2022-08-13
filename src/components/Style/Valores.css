@@ -1,0 +1,161 @@
+:root {
+    --main-color: #1F1D2C;
+    --accent-color: #F1A600;
+    --border-fondo1:20px solid rgba(206, 11, 11, 0);
+    --border-fondo2:40px solid rgba(206, 11, 11, 0);
+    --border-fondo3:20px solid rgba(206, 11, 11, 0);
+    --border1:40px solid rgb(10, 214, 10);
+    --border2:40px solid rgb(204, 10, 4);
+    --border3:20px solid rgba(5, 21, 170);
+}
+@font-face {
+    font-family: 'mi fuente';
+    src: url("../font/Blueberry\ Days.ttf");
+}
+
+@font-face {
+    font-family: 'space_time';
+    src: url("../font/Fragmentcore.otf");
+}
+
+@font-face {
+    font-family: 'Valores';
+    src: url("../font/Starborn.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#name-skill {
+    font-size: 45px;
+    font-family: 'mi fuente';
+    color:black;
+    text-shadow: 7px 7px 7px #f1a50074;
+}
+
+
+.bttHome{
+    background: none;
+    border: none;
+    align-items: flex-end;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    font-size: 17px;
+    font-family: 'my snows';
+    text-shadow: 2px 2px 2px var(--accent-color);
+    text-decoration: underline 5px;
+}
+.bttHome:hover{
+    font-size: 25px;
+   }
+.card-Valores{  
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width:480px;
+    height: 480px;
+    border-radius: 5px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(60, 21, 153, 0.307);
+    border: 0.1rem rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+main{
+    width:400px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+article{
+    width: 400px;
+    height: 15px;  
+    font-size: 18px;
+}
+.frase{
+    font-size: 25px;
+}
+.burbuja2{
+    border-radius: 50%;
+    background: #e271ad;
+    
+    position: absolute;
+    bottom: -350;    
+    animation: burbujas2 5s linear infinite ;
+}
+
+.burbuja2:nth-child(1){
+    width: 20px;
+    height: 20px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja2:nth-child(2){
+    width: 15px;
+    height: 15px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja2:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
+
+.burbuja2:nth-child(4){
+    width: 30px;
+    height: 30px;
+    left: 90%;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+.burbuja2:nth-child(5){
+    width: 10px;
+    height: 10px;
+    left: 65%;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+@keyframes burbujas2{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

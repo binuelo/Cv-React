@@ -1,0 +1,129 @@
+:root {
+    --main-color: #1F1D2C;
+    --accent-color: #F1A600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#name {
+    font-size: 50px;
+    font-family: semibold;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 18px;
+}
+span{
+    color: var(--accent-color);
+    font-size: 25px;
+}
+
+.bod{
+    z-index: 1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 10% 90% 10%;
+}
+
+.card{  
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width:450px;
+    height: 450px;
+    border-radius: 5px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255, 255, 0.307);
+    border: 0.1rem rgba(255, 255, 255, 0.18);
+    align-items: center; 
+}
+content{
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3,32,51,.8);
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+}
+.fon{
+   margin: 5px;
+   padding-bottom: 5px;
+}
+.photo{
+    width: 140px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.pie{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 40%;
+}
+.pie div {
+    text-align: center;
+}
+.one{
+    grid-column: 1;
+}
+.two{
+    grid-column: 2;
+    background-color: 2px #F1A600;
+}
+.three{
+   align-items: center;
+    grid-column: 3;
+}
+.phone{
+    height: 30px;
+    width: 30px; 
+}
+.github{
+    height: 30px;
+    width: 30px; 
+    margin-right: 20px;
+}
+
+.github:hover{
+    height: 40px;
+    width: 40px;
+    animation: logo-spin infinite 20s linear;
+}
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    } 
+  }
+.linkedin{
+    height: 30px;
+    width: 30px; 
+    margin-left: 20px;
+}
+.linkedin:hover{
+    height: 40px;
+    width: 40px;
+    animation: logo-spin infinite 10s linear
+}
+.cell{
+    visibility: hidden; 
+    transition: .3s;
+    color: var(--accent-color);
+    transition: .5s;
+}
+.cell:hover{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+.card:hover .cell{
+    visibility: visible; 
+    }

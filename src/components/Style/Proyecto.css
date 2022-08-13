@@ -1,0 +1,82 @@
+:root {
+    --main-color: #1F1D2C;
+    --accent-color: #F1A600;
+    --border-fondo1:20px solid rgba(206, 11, 11, 0);
+    --border-fondo2:40px solid rgba(206, 11, 11, 0);
+    --border-fondo3:20px solid rgba(206, 11, 11, 0);
+    --border1:40px solid rgb(10, 214, 10);
+    --border2:40px solid rgb(204, 10, 4);
+    --border3:20px solid rgba(5, 21, 170);
+}
+@font-face {
+    font-family: 'mi fuente';
+    src: url("../font/Blueberry\ Days.ttf");
+}
+@font-face {
+    font-family: 'my snows';
+    src: url("../font/a_abstract_groovy/aAbstractGroovy.ttf");
+}
+@font-face {
+    font-family: 'space_time';
+    src: url("../font/Fragmentcore.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#name-skill {
+    font-size: 45px;
+    font-family: 'mi fuente';
+    color:black;
+    text-shadow: 7px 7px 7px #f1a50074;
+}
+
+
+.bttHome{
+    background: none;
+    border: none;
+    align-items: flex-end;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    font-size: 17px;
+    font-family: 'my snows';
+    text-shadow: 2px 2px 2px var(--accent-color);
+    text-decoration: underline 5px;
+}
+.bttHome:hover{
+    font-size: 25px;
+   }
+.card-skill{  
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width:480px;
+    height: 480px;
+    border-radius: 5px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(60, 21, 153, 0.307);
+    border: 0.1rem rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+main{
+    width:400px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+article{
+    width: 400px;
+    height: 20px;   
+}
+.CRUD{
+    width: 380px;
+    height: 150px;  
+}
